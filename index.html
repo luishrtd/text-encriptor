@@ -18,32 +18,31 @@
             <div class="encriptar">
                 <textarea name="texto" class="texto" id="texto" cols="30" rows="10"
                     placeholder="Ingresa el texto aquí"></textarea>
-            </div>
-            <div class="terminos">
-                <img src="Imagenes/alerta.svg" alt="terminos">
-                <p> Solo letras minúsculas y sin acentos.</p>
-            </div>
-            <div class="botones">
-                <input type="button" class="boton-encriptar" value="Encriptar" onclick="encriptar()">
-                <input type="button" class="boton-desencriptar" value="Desencriptar" onclick="desencriptar()">
+                <div class="terminos">
+                    <img src="Imagenes/alerta.svg">
+                    <p>Solo letras minúsculas y sin acentos.</p>
+                </div>
+                <div class="botones">
+                    <input type="button" class="boton-encriptar" value="Encriptar" onclick="encriptar()">
+                    <input type="button" class="boton-desencriptar" value="Desencriptar" onclick="desencriptar()">
+
+                </div>
             </div>
             <div class="encriptado">
-                <img src="Imagenes/Muñeco.svg" alt="munieco" id="muneco">
+                <img src="Imagenes/Muñeco.svg" alt="" id="muneco">
                 <div class="mensaje-encriptado" id="mensaje-encriptado">
-                    <h2 id="titulo-mensaje">Ningún mensaje encontrado</h2>
+                    <h2 id="titulo-mensaje">Ningún mensaje fue encontrado</h2>
                     <p id="parrafo">Ingresa el texto que desees encriptar o desencriptar</p>
-                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="mensaje"></textarea>
-                </div>
-                <div class="contenedorCopiar">
-                    <input type="button" class="botonCopiar" value="copiar">
-                </div>
-                <div class="contenedorResultado">
-                    <p class="textoResultado"></p>
+                    <!-- <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="mensaje"></textarea> -->
+                    <div class="botoncopiar">
+                        <input type="button" class="boton-copiar" value="copiar" onclick="copiar(
+                            )">
+                    </div>
                 </div>
             </div>
         </div>
     </main>
 </body>
-<script src="index.html"></script>
+<script src="index.js"></script>
 
 </html>
