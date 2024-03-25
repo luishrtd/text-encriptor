@@ -21,7 +21,7 @@ function encriptar() {
         muneco.src = "./Imagenes/Muñeco.svg";
         tituloMensaje.textContent = "Ningún mensaje fue encontrado";
         parrafo.textContent = "Ingresa el texto que deseas encriptar o desencriptar";
-        alert("Debes ingresar algún texto");
+        swal("Ooops!", "Debes de ingresar un texto","warning");
     }
 }    
 
@@ -47,6 +47,12 @@ function desencriptar() {
             muneco.src = "./Imagenes/Muñeco.svg";
             tituloMensaje.textContent = "Ningún mensaje fue encontrado";
             parrafo.textContent = "Ingresa el texto que deseas encriptar o desencriptar";
-            alert("Debes ingresar algún texto");
+            swal("Ooops!", "Debes de ingresar un texto","warning");
         }
     }
+
+    function copiar() {
+        let textarea = document.getElementById("texto");
+        textarea.select();
+        document.execCommand("copy");
+      }
